@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
-
+import random
 # !!! # Crawl responsibly by identifying yourself (and your website/e-mail) on the user-agent
-USER_AGENT = 'TweetScraper'
 
+USER_AGENT_LIST = ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'
+    ]
+USER_AGENT =  random.choice(USER_AGENT_LIST)
+DOWNLOAD_DELAY = 2
+RANDOMIZE_DOWNLOAD_DELAY = True
 # settings for spiders
 BOT_NAME = 'TweetScraper'
 LOG_LEVEL = 'INFO'
