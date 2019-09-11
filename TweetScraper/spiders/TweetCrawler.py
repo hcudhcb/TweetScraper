@@ -49,7 +49,7 @@ class TweetScraper(CrawlSpider):
         # inspect_response(response, self)
         # handle current page
         data = json.loads(response.body.decode("utf-8"))
-        print(data)
+        print(response)
         for item in self.parse_tweets_block(data['items_html']):
             yield item
 
